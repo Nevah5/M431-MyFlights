@@ -1,0 +1,28 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+
+  & > *{
+    padding: 0 15px;
+  }
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+
+    a{
+      text-decoration: none;
+    }
+    .spacer{
+      display: inline-block;
+      height: 20px;
+      width: 2px;
+      background-color: black;
+      margin: 0 10px;
+    }
+  }
+}
