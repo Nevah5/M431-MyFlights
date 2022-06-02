@@ -15,14 +15,14 @@ Bei der Planung überlegten wir uns ein Design und ein Konzept wie wir die Seite
 Beim Design überlegten wir uns folgendes.<br>
 Die Home Seite sollte eine Navbar haben (wie eigentlich jede Webseite) und eine Suchfunktion. Auch überlegten wir uns eine loading-Animation.
 
-Home Seite Planung Styling:
-<img src="./images/Image_Planung_Home1.png" width="50%" />
+Home Seite Planung Styling:<br>
+<img src="./images/Image_Planung_Home1.png" width="50%">
 
-Planung Styling Footer:
-<img src="./images/Image_Planung_Footer1.png" width="50%" />
+Planung Styling Footer:<br>
+<img src="./images/Image_Planung_Footer1.png" width="50%">
 
-Planung Styling Fluginformation:
-<img src="./images/Image_Planung_Fluginformation1.png" width="50%" />
+Planung Styling Fluginformation:<br>
+<img src="./images/Image_Planung_FlugInformation1.png" width="50%">
 
 ### E - Entscheiden
 
