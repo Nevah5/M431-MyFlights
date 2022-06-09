@@ -3,28 +3,41 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
+  <BottomFooter />
 </template>
 
+<script>
+import BottomFooter from "./components/BottomFooter.vue";
+export default {
+  name: "App",
+  components: {
+    BottomFooter,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Secular+One&display=swap");
 
-nav {
-  padding: 30px;
+h1.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url("@/assets/logo.png");
+    background-position: center;
+    background-size: 100%;
+    height: 50px;
+    aspect-ratio: 1 / 1;
+  }
+  &::after {
+    content: "MyFlights";
+    font-family: "Secular One", sans-serif;
+    color: #088fd5;
   }
 }
 </style>
