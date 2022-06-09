@@ -1,6 +1,6 @@
 # M431-MyFlights
 
-A Springboot and Tyhmeleaf Project for the school module 431
+Project for school module M431
 
 ## IPERKA
 
@@ -27,3 +27,5 @@ Planung Styling Fluginformation:<br>
 ### E - Entscheiden
 
 Wir haben uns noch ein wenig mehr über unsere Idee recherchiert, und sind zum Schluss gekommen, dass es ein gutes und umsetzbares Projekt ist.
+
+Auch viel uns noch der Entscheid, welches Framework wir benutzen sollten. Da Noah ziemlich gut ist in View.js entschieden wir uns beide, dass wir dieses verwenden werden. So lernt Jonas auch noch was gutes dazu.
