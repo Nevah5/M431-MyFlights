@@ -1,10 +1,10 @@
 
-<center>
+<div align="center">
 <h1>M431-MyFlights</h1>
 <img src="./src/assets/logo.png" alt="logo" width="30%">
 
 Project for school module M431
-</center>
+</div>
 
 
 -----------------------
