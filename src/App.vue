@@ -1,7 +1,9 @@
 <template>
-  <TopNavbar />
-  <router-view />
-  <BottomFooter />
+  <main class="main">
+    <TopNavbar />
+    <router-view />
+    <BottomFooter />
+  </main>
 </template>
 
 <script>
@@ -19,8 +21,31 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Cairo&family=Secular+One&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  margin-top: 0;
+  margin: 0;
+  margin: 0 7px;
+}
+
+main.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  & > * {
+    width: 100%;
+  }
 }
 
 h1.logo {
