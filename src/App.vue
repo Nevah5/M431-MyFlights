@@ -15,6 +15,15 @@ export default {
     BottomFooter,
     TopNavbar,
   },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to) {
+        let name = to.name;
+        document.title = `${name} - Notensystem`;
+      },
+    },
+  },
 };
 </script>
 
