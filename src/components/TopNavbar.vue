@@ -5,7 +5,7 @@
         <h1 class="logo"></h1>
       </router-link>
       <div class="navigation">
-        <router-link to="/about">About</router-link>
+        <router-link to="/">Home</router-link>
         <router-link to="/contact">Contact</router-link>
         <router-link to="/faq">FAQ</router-link>
       </div>

@@ -38,6 +38,7 @@ footer {
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
+  margin-bottom: 10px;
 
   div.content {
     width: 100%;
