@@ -57,3 +57,20 @@ Planung Styling Fluginformation:<br>
 Wir haben uns noch ein wenig mehr über unsere Idee recherchiert, und sind zum Schluss gekommen, dass es ein gutes und umsetzbares Projekt ist.
 
 Auch viel uns noch der Entscheid, welches Framework wir benutzen sollten. Da Noah ziemlich gut ist in View.js entschieden wir uns beide, dass wir dieses verwenden werden. So lernt Jonas auch noch was gutes dazu.
+
+# R - Realisierung
+
+## 16.06.2022
+### Jonas
+| Datum | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen? | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
+|------| ------------------------------------------------- | ----------------------------------- |----------------------------------- |----------------------------------- | ----------------------------------- |
+| 16.06.2022 | Grundlagen von Vue.js | - 404 Error Page hinzugefügt| - Design von Home page übernommen <br /> - Path zu router hinzugefügt | - Stylen der Website | Noah |
+| 23.06.2022 |
+| 30.06.2022 |
+
+### Noah
+| Datum | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen? | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
+|------| ------------------------------------------------- | ----------------------------------- |----------------------------------- |----------------------------------- | ----------------------------------- |
+| 16.06.2022 | - | Footer ausgebaut/verbessert | - Neues Design überlegt<br />- Styling überarbeitet | voranzukommen | Ich selber. |
+| 23.06.2022 |
+| 30.06.2022 |
