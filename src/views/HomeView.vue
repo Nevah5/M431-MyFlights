@@ -4,12 +4,47 @@
       Welcome to
       <h1 class="logo"></h1>
     </span>
+    <h3>From where do you want to depart?</h3>
+    <input list="departures" />
+    <datalist id="departures">
+      <option
+        v-for="airport in airports"
+        :key="airport"
+        :value="getAirportOption(airport)"
+      >
+        {{ getAirportOption(airport) }}
+      </option>
+    </datalist>
+    <h3>Where do you want to end up?</h3>
+    <input list="arrivals" />
+    <datalist id="arrivals">
+      <option
+        v-for="airport in airports"
+        :key="airport"
+        :value="getAirportOption(airport)"
+      >
+        {{ getAirportOption(airport) }}
+      </option>
+    </datalist>
   </div>
 </template>
 
 <script>
+import airports from "@/data/airports.json";
+
 export default {
   name: "HomeView",
+  data() {
+    return {
+      airports,
+    };
+  },
+  methods: {
+    getAirportOption(data) {
+      if (data.name === null) return data.iata;
+      return data.iata + " - " + data.name;
+    },
+  },
 };
 </script>
 
