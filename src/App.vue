@@ -20,7 +20,7 @@ export default {
       immediate: true,
       handler(to) {
         let name = to.name;
-        document.title = `${name} - Notensystem`;
+        document.title = `${name} - MyFlights`;
       },
     },
   },
