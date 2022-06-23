@@ -4,12 +4,30 @@
       Welcome to
       <h1 class="logo"></h1>
     </span>
+    <FindFlight />
+    <GetFlight />
   </div>
 </template>
 
 <script>
+import airports from "@/data/airports.json";
+import FindFlight from "../components/FindFlight.vue";
+import GetFlight from "../components/GetFlight.vue";
+
 export default {
   name: "HomeView",
+  data() {
+    return {
+      airports,
+    };
+  },
+  methods: {
+    getAirportOption(data) {
+      if (data.name === null) return data.iata;
+      return data.iata + " - " + data.name;
+    },
+  },
+  components: { FindFlight, GetFlight },
 };
 </script>
 
