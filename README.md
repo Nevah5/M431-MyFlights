@@ -63,9 +63,10 @@ Auch viel uns noch der Entscheid, welches Framework wir benutzen sollten. Da Noa
 ## 16.06.2022
 
 ### Jonas
-| Datum      | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen?                                              | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
-| ---------- | -------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------- | ----------------------------- | -------------------------------------- |
-| 16.06.2022 | Grundlagen von Vue.js                              | - 404 Error Page hinzugefügt        | - Design von Home page übernommen <br /> - Path zu router hinzugefügt | - Stylen der Website          | Noah                                   |
+
+Heute habe ich mich hauptsächlich darauf fokussiert, mich in die Grundlagen von Vue.js zu vertiefen. Ich habe mich durch mehrere Tutorials duchgearbeitet, die mir dabei helfen unser Projekt mit Vue.js abzuschliessen. Während den Tutorials habe ich gemerkt, das Vue.js im allgemeinen nicht sehr kompliziert ist.
+
+Schwierigkeiten hatte ich keine, denn ich verstand das Grundkonzept von Vue.js ziemlich schnell. Zum Weiterkommen kann mit Noah helfen, da er schon Erfahrun ghat mit Vue.js, und sich allgemein sehr gut aiskennt
 
 ### Noah
 
@@ -80,3 +81,10 @@ Ich habe leider nichts gelernt, es war alles eher eine Fleissarbeit. Das gute ab
 Mir erging es heute eigentlich wieder wie letzte Woche. Ich liess Jonas an der API arbeiten währendessen ich mich dem Styling widmete. Ich erstellte mit Photoshop 2 Banner für die Startseite und fing schonmal mit der FAQ-Seite an. Wenn ich es mit dem Zeitplan vergleiche, sind wir ziemlich hinterrein und müssen wahrscheinlich noch ein wenig mehr in der Freizeit arbeiten.
 
 Die Seite sieht bis jetzt schon wirklich sehr gut aus, es fehlt eigentlich nur noch die API implementation. Ich lernte heute wie man ein schönes Zahlen eingabe Feld macht und ich weiss auch bereits, wie ich dies noch ein wenig mehr optimieren kann.
+
+
+### Jonas
+
+Heute bin ich relativ gut vorangekommen. Ich habe heute nach einer guten Flugzeug API gesucht, sodass wir alle Daten die wir wollen, ausgeben können. Ich habe mit JavaScript eine Funktion geschrieben, die die Anfrage an die API schickt, und anschliessen ausgibt.
+
+Ich lernte heute, wie man eine API request mit JavaScript schreibt, und wie man diese auf einer Website ausgibt. Alles was ich jetzt noch machen muss, ist eine weitere seperate Anfrage an eine andere API fertigstellen.
