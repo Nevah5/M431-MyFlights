@@ -1,9 +1,15 @@
 <template>
   <section>
     <div class="banner" id="getflightdata"></div>
-    <div class="userinput">
-      <h3>Enter a flight number</h3>
-      <input type="text" placeholder="Ex: UA2133" />
+    <div class="input">
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <div class="middle"></div>
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
+      <input type="text" maxlength="1" />
     </div>
   </section>
 </template>
@@ -39,29 +45,31 @@ section {
     background-size: 100%;
     background-image: url("@/assets/banner2.jpg");
   }
-  .userinput {
-    width: 100%;
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-top: 20px;
 
-    h3 {
-      margin: 40px 0 0;
-      color: #088fd6;
-      font-family: sans-serif;
+    .middle {
+      display: block;
+      height: 4px;
+      width: 15px;
+      background-color: #088fd6;
+      margin: 0 15px;
     }
     input {
-      border: solid #088fd6 3px;
-      border-radius: 3px;
-      border-radius: 0.4em;
-      min-height: 50px;
-      width: 100%;
-      color: #088fd6;
-      font-family: sans-serif;
-      padding-left: 1.3em;
+      height: 100%;
+      aspect-ratio: 1 / 1.75;
+      margin: 0 3px;
+      border: none;
       outline: none;
-
-      &:focus {
-        font-weight: 1000;
-        outline: #088fd6 solid 1px;
-      }
+      border-bottom: #088fd6 solid 4px;
+      font-family: "Secular One", sans-serif;
+      font-size: 3rem;
+      color: #088fd6;
+      text-align: center;
     }
   }
 }
