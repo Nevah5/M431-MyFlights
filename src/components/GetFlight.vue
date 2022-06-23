@@ -212,7 +212,7 @@ section {
       outline: none;
       border-bottom: #088fd6 solid 4px;
       font-family: "Secular One", sans-serif;
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: #088fd6;
       text-align: center;
       text-transform: uppercase;
