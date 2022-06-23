@@ -34,22 +34,22 @@ Planung Styling Fluginformation:<br>
 
 ## Zeitplanung
 
-| Datum | # Lektion | Wer? | Was? |
-|-------|-----------|------|------|
-| 09.06.2022 | 4 | Jonas | Navbar erstellen |
-| 09.06.2022 | 4 | Noah | Footer erstellen |
-| 16.06.2022 | 1 | Jonas | API einbinden |
-| 16.06.2022 | 1 | Noah | Sidebar implementieren |
-| 16.06.2022 | 2 | Jonas & Noah | Flugkarte erstellen |
-| 16.06.2022 | 3 | Jonas | Api Data darstellen |
-| 16.06.2022 | 4 | - | Pufferzeit |
-| 23.06.2022 | 1 | Jonas & Noah | Dokumentation schreiben |
-| 23.06.2022 | 2 | Noah | Design verbessern |
-| 23.06.2022 | 2 | Jonas | FAQ Page |
-| 23.06.2022 | 3 | - | Pufferzeit |
-| 23.06.2022 | 4 | - | Pufferzeit |
-| 30.06.2022 | 1 | Jonas & Noah | Präsentation vorbereiten |
-| 30.06.2022 | 2 | Jonas & Noah | Präsentation vorbereiten |
+| Datum      | # Lektion | Wer?         | Was?                     |
+| ---------- | --------- | ------------ | ------------------------ |
+| 09.06.2022 | 4         | Jonas        | Navbar erstellen         |
+| 09.06.2022 | 4         | Noah         | Footer erstellen         |
+| 16.06.2022 | 1         | Jonas        | API einbinden            |
+| 16.06.2022 | 1         | Noah         | Sidebar implementieren   |
+| 16.06.2022 | 2         | Jonas & Noah | Flugkarte erstellen      |
+| 16.06.2022 | 3         | Jonas        | Api Data darstellen      |
+| 16.06.2022 | 4         | -            | Pufferzeit               |
+| 23.06.2022 | 1         | Jonas & Noah | Dokumentation schreiben  |
+| 23.06.2022 | 2         | Noah         | Design verbessern        |
+| 23.06.2022 | 2         | Jonas        | FAQ Page                 |
+| 23.06.2022 | 3         | -            | Pufferzeit               |
+| 23.06.2022 | 4         | -            | Pufferzeit               |
+| 30.06.2022 | 1         | Jonas & Noah | Präsentation vorbereiten |
+| 30.06.2022 | 2         | Jonas & Noah | Präsentation vorbereiten |
 
 
 # E - Entscheiden
@@ -62,15 +62,12 @@ Auch viel uns noch der Entscheid, welches Framework wir benutzen sollten. Da Noa
 
 ## 16.06.2022
 ### Jonas
-| Datum | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen? | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
-|------| ------------------------------------------------- | ----------------------------------- |----------------------------------- |----------------------------------- | ----------------------------------- |
-| 16.06.2022 | Grundlagen von Vue.js | - 404 Error Page hinzugefügt| - Design von Home page übernommen <br /> - Path zu router hinzugefügt | - Stylen der Website | Noah |
-| 23.06.2022 |
-| 30.06.2022 |
+| Datum      | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen?                                              | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
+| ---------- | -------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------- | ----------------------------- | -------------------------------------- |
+| 16.06.2022 | Grundlagen von Vue.js                              | - 404 Error Page hinzugefügt        | - Design von Home page übernommen <br /> - Path zu router hinzugefügt | - Stylen der Website          | Noah                                   |
 
 ### Noah
-| Datum | Was weiss/kann ich nun mehr als vor den Lektionen? | Was habe ich gemacht, ganz konkret? | Wie bin ich vorgegangen? | Wo hatte ich Schwierigkeiten? | Wer kann mir helfen um weiterzukommen? |
-|------| ------------------------------------------------- | ----------------------------------- |----------------------------------- |----------------------------------- | ----------------------------------- |
-| 16.06.2022 | - | Footer ausgebaut/verbessert | - Neues Design überlegt<br />- Styling überarbeitet | voranzukommen | Ich selber. |
-| 23.06.2022 |
-| 30.06.2022 |
+
+Ich habe in den heutigen Lektionen eigentlich ziemlich viel styling gemacht. Ich habe die Startseite designt und viele kleine Fehler von Jonas angepasst. Ich hielf ihm heute ziemlich aus und zeigte ihm React. Er hat mir bereits gesagt, dass es wirklich nicht kompliziert und schwierig aussieht. Ich hoffe er kommt gut damit zurecht.
+
+Ich habe leider nichts gelernt, es war alles eher eine Fleissarbeit. Das gute aber ist, dass ich gut damit zurecht komme und sehr geübt bin mit CSS und HTML. Wenn ich aber Schwierigkeiten hätte, wäre das Internet wahrscheinlich die einzige Lösung.
