@@ -4,28 +4,30 @@
       Welcome to
       <h1 class="logo"></h1>
     </span>
-    <h3>From where do you want to depart?</h3>
-    <input list="departures" />
-    <datalist id="departures">
-      <option
-        v-for="airport in airports"
-        :key="airport"
-        :value="getAirportOption(airport)"
-      >
-        {{ getAirportOption(airport) }}
-      </option>
-    </datalist>
-    <h3>Where do you want to end up?</h3>
-    <input list="arrivals" />
-    <datalist id="arrivals">
-      <option
-        v-for="airport in airports"
-        :key="airport"
-        :value="getAirportOption(airport)"
-      >
-        {{ getAirportOption(airport) }}
-      </option>
-    </datalist>
+    <div class="userinput">
+      <h3>From where do you want to depart?</h3>
+      <input list="departures" />
+      <datalist id="departures">
+        <option
+          v-for="airport in airports"
+          :key="airport"
+          :value="getAirportOption(airport)"
+        >
+          {{ getAirportOption(airport) }}
+        </option>
+      </datalist>
+      <h3>Where do you want to end up?</h3>
+      <input list="arrivals" />
+      <datalist id="arrivals">
+        <option
+          v-for="airport in airports"
+          :key="airport"
+          :value="getAirportOption(airport)"
+        >
+          {{ getAirportOption(airport) }}
+        </option>
+      </datalist>
+    </div>
   </div>
 </template>
 
@@ -70,6 +72,31 @@ export default {
 
       &::before {
         height: 40px;
+      }
+    }
+  }
+  .userinput {
+    margin: 16vh 5vw 14vh;
+
+    h3 {
+      margin: 40px 0 0;
+      color: #088fd6;
+      font-family: sans-serif;
+    }
+    input {
+      border: solid #088fd6 3px;
+      border-radius: 3px;
+      border-radius: 0.4em;
+      min-height: 50px;
+      width: 100%;
+      color: #088fd6;
+      font-family: sans-serif;
+      padding-left: 1.3em;
+      outline: none;
+
+      &:focus {
+        font-weight: 1000;
+        outline: #088fd6 solid 1px;
       }
     }
   }
