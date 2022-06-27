@@ -29,8 +29,20 @@
 </template>
 
 <script>
+import airports from "@/data/airports.json";
 export default {
   name: "FindFlight",
+  data() {
+    return {
+      airports,
+    };
+  },
+  methods: {
+    getAirportOption(data) {
+      if (data.name === null) return data.iata;
+      return data.iata + " - " + data.name;
+    },
+  },
 };
 </script>
 
