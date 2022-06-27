@@ -1,9 +1,11 @@
 <template>
-  <h1>FAQ - Frequently Asked Questions</h1>
-  <details v-for="q in questions" :key="q">
-    <summary>{{ q.q }}</summary>
-    <p>{{ q.a }}</p>
-  </details>
+  <main>
+    <h1>FAQ - Frequently Asked Questions</h1>
+    <details v-for="q in questions" :key="q">
+      <summary>{{ q.q }}</summary>
+      <p>{{ q.a }}</p>
+    </details>
+  </main>
 </template>
 
 <script>
@@ -35,27 +37,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  font-family: "Secular One", sans-serif;
-  color: #088fd5;
-}
-details {
-  border-top: solid 3px #088fd5;
-  border-bottom: solid 3px #088fd5;
-  padding: 20px 0;
-  margin: 10px 0;
+main {
+  margin-bottom: auto;
+  padding: 0 5vw;
 
-  summary {
-    font-size: 1.5rem;
-    padding: 0 3vw;
+  h1 {
     font-family: "Secular One", sans-serif;
     color: #088fd5;
-    cursor: pointer;
   }
-  *:not(summary) {
-    font-size: 1.3rem;
-    color: #088fd5;
-    padding: 0 3vw;
+  details {
+    border-bottom: solid 3px #088fd5;
+    padding: 20px 0;
+    margin: 10px 0;
+    font-family: sans-serif;
+
+    summary {
+      font-size: 1.5rem;
+      padding: 0 3vw;
+      font-family: "Secular One", sans-serif;
+      color: #088fd5;
+      cursor: pointer;
+    }
+    *:not(summary) {
+      font-size: 1.3rem;
+      color: #088fd5;
+      padding: 0 3vw;
+    }
   }
 }
 </style>
