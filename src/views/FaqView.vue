@@ -12,10 +12,22 @@ export default {
   data() {
     return {
       questions: [
-        { q: "Question1", a: "Answer1" },
-        { q: "Question2", a: "Answer2" },
-        { q: "Question3", a: "Answer3" },
-        { q: "Question4", a: "Answer4" },
+        {
+          q: "Can you buy flights directly on your Hub?",
+          a: "No, sadly we don't offer this kind of service. We only provide you with a search engine to find and discover flights.",
+        },
+        {
+          q: "Is there a limit to how many searches I can do?",
+          a: "Yes, but this limit is very high, so you will probably not notice it.",
+        },
+        {
+          q: "Will there be any new features added soon?",
+          a: "No. This service we provide will be the only one and we will not maintain it.",
+        },
+        {
+          q: "Is there any other similar search engine for flights I can use?",
+          a: "Yes, but it is currently offline.",
+        },
       ],
     };
   },
