@@ -34,6 +34,14 @@ export default {
             { type: "h4", content: "Noah und Jonas" },
           ],
         },
+        {
+          id: "inhaltsverzeichnis",
+          classes: "slide",
+          content: [
+            { type: "h1", content: "Inhaltsverzeichnis" },
+            { type: "li", content: "Idee" },
+          ],
+        },
       ],
     };
   },
@@ -45,17 +53,74 @@ main {
   margin-bottom: auto;
   padding: 0 5vw;
 
-  h1 {
+  section {
+    height: calc(100vh - 94px + 4px);
+
+    &:not(:last-child) {
+      border-bottom: solid #088fd5 4px;
+      margin-bottom: 30px;
+    }
+    &.center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &.slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0 0 4vh;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 110%;
+    margin: 0;
+    color: #088fd5;
     font-family: "Secular One", sans-serif;
-    color: #088fd5;
   }
-  p {
-    font-family: sans-serif;
-    color: #088fd5;
-    font-weight: 700;
+  h1 {
+    font-size: 5em;
   }
-  a {
-    color: #306b87;
+  h2 {
+    font-size: 4em;
+  }
+  h3 {
+    font-size: 3.3em;
+  }
+  h4 {
+    font-size: 3em;
+  }
+  h5 {
+    font-size: 2.5em;
+  }
+  h6 {
+    font-size: 2.1em;
+  }
+  p,
+  li {
+    margin: 0;
+    color: #088fd5;
+    font-size: 2.1em;
+  }
+  li {
+    margin-left: 30px;
   }
 }
 </style>
