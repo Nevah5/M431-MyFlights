@@ -1,5 +1,5 @@
 <template>
-<button onclick="flightData(departures, arrival)">Hello</button>
+  <button onclick="() => flightData(departures, arrival)">Hello</button>
   <section>
     <div class="banner" id="findflight"></div>
     <div class="userinput">
@@ -32,31 +32,45 @@
 <script>
 export default {
   name: "FindFlight",
-  methods:
-  function flightData(departures, arrival){
-    global.XMLHttpRequest = require('xhr2');
-const data = null;
+  methods: {
+    flightData(departures, arrival) {
+      global.XMLHttpRequest = require("xhr2");
+      const data = null;
 
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+      const xhr = new XMLHttpRequest();
+      xhr.withCredentials = true;
 
-xhr.addEventListener("readystatechange", function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-	}
-});
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+          console.log(this.responseText);
+        }
+      });
 
-xhr.open("GET", 'https://travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com/v1/prices/cheap?origin=' + departures + '&page=None&currency=CHF&destination=-' + arrival + '');
-xhr.setRequestHeader("X-Access-Token", "c51d0a238003f2cce89f10f33daf8c5e");
-xhr.setRequestHeader("X-RapidAPI-Key", "996324cc9bmsh2c3caea95a50c2cp1bd09ejsn8ae1addb0b81");
-xhr.setRequestHeader("X-RapidAPI-Host", "travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com");
+      xhr.open(
+        "GET",
+        "https://travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com/v1/prices/cheap?origin=" +
+          departures +
+          "&page=None&currency=CHF&destination=-" +
+          arrival +
+          ""
+      );
+      xhr.setRequestHeader(
+        "X-Access-Token",
+        "c51d0a238003f2cce89f10f33daf8c5e"
+      );
+      xhr.setRequestHeader(
+        "X-RapidAPI-Key",
+        "996324cc9bmsh2c3caea95a50c2cp1bd09ejsn8ae1addb0b81"
+      );
+      xhr.setRequestHeader(
+        "X-RapidAPI-Host",
+        "travelpayouts-travelpayouts-flight-data-v1.p.rapidapi.com"
+      );
 
-xhr.send(data);
-
-},
-
-
-}
+      xhr.send(data);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
