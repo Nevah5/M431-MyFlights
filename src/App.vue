@@ -32,6 +32,8 @@ export default {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 *,
 *:before,

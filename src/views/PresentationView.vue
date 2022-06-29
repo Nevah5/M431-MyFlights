@@ -16,11 +16,18 @@
         <p v-if="content.type === 'p'">{{ content.content }}</p>
         <li v-if="content.type === 'li'">{{ content.content }}</li>
         <li v-if="content.type === 'li-a'">
-          <a :href="content.href" target="_blank">{{ content.content }}</a>
+          <a
+            :href="content.href"
+            :target="content.target === undefined ? '_blank' : ''"
+            >{{ content.content }}</a
+          >
         </li>
-        <a v-if="content.type === 'a'" :href="content.href" target="_blank">{{
-          content.content
-        }}</a>
+        <a
+          v-if="content.type === 'a'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+          >{{ content.content }}</a
+        >
       </div>
     </section>
   </main>
@@ -45,11 +52,26 @@ export default {
           classes: "slide",
           content: [
             { type: "h1", content: "Inhaltsverzeichnis" },
-            { type: "li", content: "Idee" },
-            { type: "li", content: "Planung" },
-            { type: "li", content: "Vorgehen" },
-            { type: "li", content: "Projekt" },
-            { type: "li", content: "Fazit" },
+            { type: "li-a", href: "#idee", target: false, content: "Idee" },
+            {
+              type: "li-a",
+              href: "#planung",
+              target: false,
+              content: "Planung",
+            },
+            {
+              type: "li-a",
+              href: "#vorgehen",
+              target: false,
+              content: "Vorgehen",
+            },
+            {
+              type: "li-a",
+              href: "#projekt",
+              target: false,
+              content: "Projekt",
+            },
+            { type: "li-a", href: "#fazit", target: false, content: "Fazit" },
           ],
         },
         {
