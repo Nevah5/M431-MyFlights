@@ -15,6 +15,12 @@
         <h6 v-if="content.type === 'h6'">{{ content.content }}</h6>
         <p v-if="content.type === 'p'">{{ content.content }}</p>
         <li v-if="content.type === 'li'">{{ content.content }}</li>
+        <li v-if="content.type === 'li-a'">
+          <a :href="content.href" target="_blank">{{ content.content }}</a>
+        </li>
+        <a v-if="content.type === 'a'" :href="content.href" target="_blank">{{
+          content.content
+        }}</a>
       </div>
     </section>
   </main>
@@ -40,7 +46,79 @@ export default {
           content: [
             { type: "h1", content: "Inhaltsverzeichnis" },
             { type: "li", content: "Idee" },
+            { type: "li", content: "Planung" },
+            { type: "li", content: "Vorgehen" },
+            { type: "li", content: "Projekt" },
+            { type: "li", content: "Fazit" },
           ],
+        },
+        {
+          id: "idee",
+          classes: "slide",
+          content: [
+            { type: "h1", content: "Idee" },
+            { type: "li", content: "Idee von Noah" },
+            { type: "li", content: "Bei Suche nach API" },
+            { type: "li", content: "Auf Flug API gestossen" },
+          ],
+        },
+        {
+          id: "planung",
+          classes: "slide",
+          content: [
+            { type: "h1", content: "Planung" },
+            { type: "li", content: "Entscheidung getroffen" },
+            {
+              type: "li-a",
+              href: "https://github.com/Nevah5/M431-MyFlights#zeitplanung",
+              content: "Arbeitspackete für Lektionen erstellt",
+            },
+            {
+              type: "li-a",
+              href: "https://github.com/Nevah5/M431-MyFlights#p---planung",
+              content: "Styling erstellt",
+            },
+          ],
+        },
+        {
+          id: "vorgehen",
+          classes: "slide",
+          content: [
+            { type: "h1", content: "Vorgehen" },
+            { type: "li", content: "Jonas Vue.js zeigen" },
+            { type: "li", content: "Vue Applikation" },
+            { type: "li", content: "Styling erstellen" },
+            { type: "li", content: "Logo suchen" },
+            { type: "li", content: "API einbinden" },
+          ],
+        },
+        {
+          id: "projekt",
+          classes: "center",
+          content: [
+            { type: "h1", content: "Projekt" },
+            {
+              type: "h3",
+              content: "https://glr.li/myflights",
+            },
+          ],
+        },
+        {
+          id: "fazit",
+          classes: "slide",
+          content: [
+            { type: "h1", content: "Fazit" },
+            { type: "li", content: "Mehr erreichen können mit mehr Zeit" },
+            { type: "li", content: "Vue Kenntnisse erhalten/erweitert" },
+            { type: "li", content: "CSS Styling training" },
+            { type: "li", content: "Lernjournal/Reflexion" },
+            { type: "li", content: "Markdown" },
+          ],
+        },
+        {
+          id: "end",
+          classes: "finish center",
+          content: [{ type: "h1", content: "Danke!" }],
         },
       ],
     };
@@ -82,6 +160,36 @@ main {
         margin: 0 0 4vh;
       }
     }
+    &.finish {
+      h1 {
+        position: relative;
+        overflow: hidden;
+        padding: 10px 50px;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: #088fd5;
+          height: 300%;
+          width: 10%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          top: -5px;
+          right: -5px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: #088fd5;
+          height: 300%;
+          width: 10%;
+          transform: translate(50%, 50%) rotate(-45deg);
+          bottom: -5px;
+          left: -5px;
+        }
+      }
+    }
   }
 
   h1,
@@ -121,6 +229,9 @@ main {
   }
   li {
     margin-left: 30px;
+  }
+  a {
+    color: #1c3542;
   }
 }
 </style>
