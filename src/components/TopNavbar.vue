@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 7px - 7px);
     background-color: #088fd5;
     height: 4px;
     border-radius: 0.3em;
