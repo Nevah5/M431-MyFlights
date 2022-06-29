@@ -28,6 +28,9 @@
           :target="content.target === undefined ? '_blank' : ''"
           >{{ content.content }}</a
         >
+        <a v-if="content.type === 'next'" id="next" :href="'#' + content.nextId"
+          >NEXT</a
+        >
       </div>
     </section>
   </main>
@@ -45,6 +48,7 @@ export default {
           content: [
             { type: "h1", content: "Presentation" },
             { type: "h4", content: "Noah und Jonas" },
+            { type: "next", nextId: "inhaltsverzeichnis" },
           ],
         },
         {
@@ -72,6 +76,7 @@ export default {
               content: "Projekt",
             },
             { type: "li-a", href: "#fazit", target: false, content: "Fazit" },
+            { type: "next", nextId: "idee" },
           ],
         },
         {
@@ -82,6 +87,7 @@ export default {
             { type: "li", content: "Idee von Noah" },
             { type: "li", content: "Bei Suche nach API" },
             { type: "li", content: "Auf Flug API gestossen" },
+            { type: "next", nextId: "planung" },
           ],
         },
         {
@@ -100,6 +106,7 @@ export default {
               href: "https://github.com/Nevah5/M431-MyFlights#p---planung",
               content: "Styling erstellt",
             },
+            { type: "next", nextId: "vorgehen" },
           ],
         },
         {
@@ -112,6 +119,7 @@ export default {
             { type: "li", content: "Styling erstellen" },
             { type: "li", content: "Logo suchen" },
             { type: "li", content: "API einbinden" },
+            { type: "next", nextId: "projekt" },
           ],
         },
         {
@@ -123,6 +131,7 @@ export default {
               type: "h3",
               content: "https://glr.li/myflights",
             },
+            { type: "next", nextId: "fazit" },
           ],
         },
         {
@@ -135,6 +144,7 @@ export default {
             { type: "li", content: "CSS Styling training" },
             { type: "li", content: "Lernjournal/Reflexion" },
             { type: "li", content: "Markdown" },
+            { type: "next", nextId: "end" },
           ],
         },
         {
@@ -155,7 +165,22 @@ main {
 
   section {
     height: calc(100vh - 94px + 4px);
+    position: relative;
+    z-index: 1;
 
+    a#next {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background-color: #088fd5;
+      border-radius: 0.4em;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: 1000;
+      text-decoration: none;
+      font-family: "Secular One", sans-serif;
+      color: white;
+    }
     &:not(:last-child) {
       border-bottom: solid #088fd5 4px;
       margin-bottom: 30px;
