@@ -1,12 +1,14 @@
 <template>
-  <div class="NotFound">
-    <div class="logo"></div>
-    <caption>
-      <h2>404</h2>
-      <h2>Not Found</h2>
-      <h2>:(</h2>
-    </caption>
-  </div>
+  <main>
+    <div class="NotFound">
+      <div class="logo"></div>
+      <caption>
+        <h2>404</h2>
+        <h2>Not Found</h2>
+        <h2>:(</h2>
+      </caption>
+    </div>
+  </main>
 </template>
 
 <style lang="scss">

@@ -1,12 +1,14 @@
 <template>
-  <div class="home">
-    <span id="greeting">
-      Welcome to
-      <h1 class="logo"></h1>
-    </span>
-    <FindFlight />
-    <GetFlight />
-  </div>
+  <main>
+    <div class="home">
+      <span id="greeting">
+        Welcome to
+        <h1 class="logo"></h1>
+      </span>
+      <FindFlight />
+      <GetFlight />
+    </div>
+  </main>
 </template>
 
 <script>
