@@ -55,6 +55,10 @@ main.main {
   & > * {
     width: 100%;
   }
+
+  main {
+    margin-top: 94px;
+  }
 }
 
 h1.logo {

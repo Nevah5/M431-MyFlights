@@ -6,7 +6,7 @@
       </router-link>
       <div class="navigation">
         <router-link to="/">Home</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/presentation">Presentation</router-link>
         <router-link to="/faq">FAQ</router-link>
       </div>
     </div>
@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 7px - 7px);
     background-color: #088fd5;
     height: 4px;
     border-radius: 0.3em;
