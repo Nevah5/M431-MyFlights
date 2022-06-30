@@ -1,5 +1,5 @@
 <template>
-  <button onclick="flightData(departures, arrival)">Hello</button>
+  <button onclick="() => flightData(departures, arrival)">Hello</button>
   <section>
     <div class="banner" id="findflight"></div>
     <div class="userinput">
