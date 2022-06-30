@@ -70,6 +70,11 @@
         @keydown="(key) => handle(key, 7)"
       />
     </div>
+    <div class="output">
+      <h2 v-if="state === 'loading'" id="loading">Loading...</h2>
+      <h2 v-if="state === 'error'" id="error">Something went wrong!</h2>
+      <h2 v-if="state === 'success'" id="success">{{ data.flight_status }}</h2>
+    </div>
   </section>
 </template>
 
@@ -79,6 +84,9 @@ export default {
   data() {
     return {
       position: 1,
+      state: "none",
+      data: {},
+      apikey: "59052aa7fd7a480d6c0b772c31665a12",
       input: "",
     };
   },
@@ -145,7 +153,25 @@ export default {
       }
       if (key.key === "ArrowRight") this.next(this.position);
       if (key.key === "ArrowLeft") this.previous(this.position);
+      if (key.key === "Enter") return this.submit();
       this.updateInputValue();
+    },
+    submit() {
+      this.updateInputValue();
+      this.state = "loading";
+      fetch(
+        `http://api.aviationstack.com/v1/flights?access_key=${this.apikey}&flight_iata=${this.input}`
+      )
+        .then((res) => res.json())
+        .then((json) => {
+          this.data = json.data[0];
+          console.log(this.data);
+          if (json.data[0] === undefined) return (this.state = "error");
+          this.state = "success";
+        })
+        .catch((json) => {
+          console.log(json);
+        });
     },
     updateInputValue() {
       var input = "";
@@ -216,6 +242,17 @@ section {
       color: #088fd6;
       text-align: center;
       text-transform: uppercase;
+    }
+  }
+  .output {
+    h2 {
+      margin-top: 70px;
+      color: #088fd6;
+      font-family: "Secular One", sans-serif;
+
+      &#error {
+        color: rgb(215, 106, 106);
+      }
     }
   }
 }
