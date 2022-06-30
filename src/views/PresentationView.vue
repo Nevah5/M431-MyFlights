@@ -31,6 +31,48 @@
         <a v-if="content.type === 'next'" id="next" :href="'#' + content.nextId"
           >NEXT</a
         >
+        <a
+          v-if="content.type === 'a-h1'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h1>{{ content.content }}</h1>
+        </a>
+        <a
+          v-if="content.type === 'a-h2'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h2>{{ content.content }}</h2>
+        </a>
+        <a
+          v-if="content.type === 'a-h3'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h3>{{ content.content }}</h3>
+        </a>
+        <a
+          v-if="content.type === 'a-h4'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h4>{{ content.content }}</h4>
+        </a>
+        <a
+          v-if="content.type === 'a-h5'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h5>{{ content.content }}</h5>
+        </a>
+        <a
+          v-if="content.type === 'a-h6'"
+          :href="content.href"
+          :target="content.target === undefined ? '_blank' : ''"
+        >
+          <h6>{{ content.content }}</h6>
+        </a>
       </div>
     </section>
   </main>
@@ -128,7 +170,8 @@ export default {
           content: [
             { type: "h1", content: "Projekt" },
             {
-              type: "h3",
+              type: "a-h3",
+              href: "https://glr.li/myflights",
               content: "https://glr.li/myflights",
             },
             { type: "next", nextId: "fazit" },
